@@ -1,3 +1,4 @@
 div.recitation {
-  border: 5px outset red;
+  border: 5px dashed blue;
+  /*border: 5px solid blue;*/
 }
