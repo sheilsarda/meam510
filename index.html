@@ -1,52 +1,54 @@
 <!doctype html>
 <html>
-	<head>
-		<meta charset="utf-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<title>MEAM510 Recitation 9</title>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
-		<link rel="stylesheet" href="dist/reset.css">
-		<link rel="stylesheet" href="dist/reveal.css">
-		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+	<title>MEAM510 Recitation 9</title>
 
-		<!-- Theme used for syntax highlighted code -->
-		<link rel="stylesheet" href="plugin/highlight/monokai.css">
-	</head>
-	<body>
-		<div class="reveal">
-			<div class="slides">
-				<section>
-					<h2>Recitation 9</h2>
-					<h4>Greg, Will, Sheil</h4>
-				</section>
-				<section>
-					<h2>Overview of provided code structure</h2>
-				</section>
-				<section data-markdown>
-					<textarea data-template style="text-align: left">
+	<link rel="stylesheet" href="dist/reset.css">
+	<link rel="stylesheet" href="dist/reveal.css">
+	<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+	<!-- Theme used for syntax highlighted code -->
+	<link rel="stylesheet" href="plugin/highlight/monokai.css">
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+			<section>
+				<h2>Recitation 9</h2>
+				<h4>Greg, Will, Sheil</h4>
+			</section>
+			<section>
+				<h2>Overview of provided code structure</h2>
+			</section>
+			<section data-markdown>
+				<textarea data-template style="text-align: left">
 						## HTML (+ CSS) + Javascript
 
-						## HTML
-
+						### HTML
 						- **H**yper **T**ext **M**arkup **L**anguage
 						- *How the website looks*
+						<br></br>
 
-						## Javascript
-
+						### Javascript
 						- Functionality of the website
 						- *Code that runs the website*
-						
-                        ## References
-<!---
-                        - [More comprehensive slides from CIS197](https://www.cis.upenn.edu/~cis197/lectures/3-html-css-jquery#0)
+
+						<br></br>
+						#### References
+
+						- [More comprehensive slides from CIS197](https://www.cis.upenn.edu/~cis197/lectures/3-html-css-jquery#0)
 						- [Common Events (taken from CIS197)](https://www.cis.upenn.edu/~cis197/lectures/3-html-css-jquery#29)
-                        - [Documentation on Keyboard Events](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
-						- [Documentation on Mouse Events](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)   -->
+						- [Documentation on Keyboard Events](https://developer.mozilla.org/en-US/docs/Web/API/KeyboardEvent)
+						- [Documentation on Mouse Events](https://developer.mozilla.org/en-US/docs/Web/API/MouseEvent)   
 					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template style="text-align: left">
+			</section>
+			<section data-markdown>
+				<textarea data-template style="text-align: left">
 						## HTML Basics
 						- HTML document is made up of a tree of tags ex: `<div></div>`
 						- <pre><code class="language-html"><script type="text/template">
@@ -70,9 +72,9 @@
 							</script></code></pre>
 						- Exhaustive list of HTML tags: https://www.w3schools.com/TAGS/default.ASP
 					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template style="text-align: left">
+			</section>
+			<section data-markdown>
+				<textarea data-template style="text-align: left">
 						## Let's look at the HTML portion of the slider
 						<pre><code class="language-html"><script type="text/template">
 							<!DOCTYPE html>
@@ -84,9 +86,9 @@
 							</html>
 							</script></code></pre>
 					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template style="text-align: left">
+			</section>
+			<section data-markdown>
+				<textarea data-template style="text-align: left">
 						## Let's add another slider
 						<pre><code class="language-html"><script type="text/template">
 							<!DOCTYPE html>
@@ -99,9 +101,9 @@
 							</html>
 							</script></code></pre>
 					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template style="text-align: left">
+			</section>
+			<section data-markdown>
+				<textarea data-template style="text-align: left">
 						## Let's add a button
 						<pre><code class="language-html"><script type="text/template">
 							<!DOCTYPE html>
@@ -119,38 +121,42 @@
 						`<br>` is a line break
 						Note, this page has no functionality. It's purely visual
 					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template style="text-align: left">
+			</section>
+			<section data-markdown>
+				<textarea data-template style="text-align: left">
 						## CSS
 						HTML by itself is plain text. While you can set attributes for each tag individually, this gets tedious very quickly.
 
 						CSS is a way to edit the default style of the basic HTML tags.
 
 					</textarea>
-				</section>
-				<section>
-					<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black</a>
-					<br>
-					<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/white.css'); return false;">White</a>
-					<br>
-					<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/simple.css'); return false;">Simple</a>
-					<br>
-					<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/penn_metropolis.css'); return false;">Custom</a>
-				</section>
-				<section data-markdown>
-					<textarea data-template style="text-align: left">
+			</section>
+			<section>
+				<a href="#"
+					onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black</a>
+				<br>
+				<a href="#"
+					onclick="document.getElementById('theme').setAttribute('href','dist/theme/white.css'); return false;">White</a>
+				<br>
+				<a href="#"
+					onclick="document.getElementById('theme').setAttribute('href','dist/theme/simple.css'); return false;">Simple</a>
+				<br>
+				<a href="#"
+					onclick="document.getElementById('theme').setAttribute('href','dist/theme/penn_metropolis.css'); return false;">Custom</a>
+			</section>
+			<section data-markdown>
+				<textarea data-template style="text-align: left">
 						## Javascript
 
 						- Whereas HTML is in charge of how the website looks, the functionality of the website is controlled using Javascript
 						- The Javascript scripts or functions must be placed in between the `<script>` tags.
 						- You can also link to other javascript files: 
-							- `<script src="path/to/script.js"></script>`
+							- `< script src = "path/to/script.js" ></script>`
 							- Note probably not necessary or possible for the ESP
 					</textarea>
-				</section>
-				<section data-markdown>
-					<textarea data-template style="text-align: left">
+			</section>
+			<section data-markdown>
+				<textarea data-template style="text-align: left">
 						## Basic Handlers
 
 						- We can attach function handles to HTML objects for certain events
@@ -158,15 +164,15 @@
 						`html-object.onchange = function() {}`
 						- Live Example:
 					</textarea>
-				</section>
-			</div>
+			</section>
 		</div>
+	</div>
 
-		<script src="dist/reveal.js"></script>
-		<script src="plugin/notes/notes.js"></script>
-		<script src="plugin/markdown/markdown.js"></script>
-		<script src="plugin/highlight/highlight.js"></script>
-		<script>
+	<script src="dist/reveal.js"></script>
+	<script src="plugin/notes/notes.js"></script>
+	<script src="plugin/markdown/markdown.js"></script>
+	<script src="plugin/highlight/highlight.js"></script>
+	<script>
 			// More info about initialization & config:
 			// - https://revealjs.com/initialization/
 			// - https://revealjs.com/config/
@@ -177,8 +183,9 @@
 				progress: false,
 
 				// Learn about plugins: https://revealjs.com/plugins/
-				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+				plugins: [RevealMarkdown, RevealHighlight, RevealNotes]
 			});
-		</script>
-	</body>
+	</script>
+</body>
+
 </html>
