@@ -17,7 +17,7 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
 :root {
   --r-background-color: #fff;
   --r-main-font: Lato, sans-serif;
-  --r-main-font-size: 40px;
+  --r-main-font-size: 24px;
   --r-main-color: #000;
   --r-block-margin: 20px;
   --r-heading-margin: 0 0 20px 0;
@@ -63,6 +63,12 @@ section.has-dark-background, section.has-dark-background h1, section.has-dark-ba
   color: var(--r-selection-color);
   background: var(--r-selection-background-color);
   text-shadow: none;
+}
+
+.reveal .slides {
+  text-align:left;
+  top:  0;
+  margin-top: 0;
 }
 
 .reveal .slides section,

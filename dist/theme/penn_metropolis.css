@@ -7,6 +7,7 @@
 
 @import url('https://fonts.googleapis.com/css?family=Fira+Sans');
 
+
 html.dimbg .slide-background {
     opacity: 0.5 !important;
 }
@@ -88,7 +89,7 @@ body.dark .reveal h6 {
     /*font-family: "Fira Sans";*/
     font-family: "DejaVu Sans Light","Calibri Light", "Palatino Linotype", "Book Antiqua", Palatino, FreeSerif, serif;    
     /*font-family: "IBM Plex Sans";*/
-    font-size: 36px;
+    font-size: 24px;
     font-weight: normal;
     color: #33474b; }
 
