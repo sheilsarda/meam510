@@ -1,0 +1,159 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>reveal.js</title>
+
+		<link rel="stylesheet" href="dist/reset.css">
+		<link rel="stylesheet" href="dist/reveal.css">
+		<link rel="stylesheet" href="dist/theme/white.css" id="theme">
+
+		<!-- Theme used for syntax highlighted code -->
+		<link rel="stylesheet" href="plugin/highlight/monokai.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h2>Recitation 9</h2>
+					<h4>Greg, Will, Sheil</h4>
+				</section>
+				<section data-markdown>
+					<textarea data-template style="text-align: left">
+						## HTML (+ CSS) + Javascript
+
+						<a href="https://www.cis.upenn.edu/~cis197/lectures/3-html-css-jquery#0">
+							More comprehensive slides from CIS197
+						</a>
+
+						HTML
+						- **H**yper **T**ext **M**arkup **L**anguage
+						- *How the website looks*
+
+						Javascript
+						- Functionality of the website
+						- *Code that runs the website*
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template style="text-align: left">
+						## HTML Basics
+						- HTML document is made up of a tree of tags ex: `<div></div>`
+						- <pre><code class="language-html"><script type="text/template">
+							<!doctype html>
+							<html>
+								<head>
+									Header code
+									<br>
+									Style and configs go here
+								</head>
+								<body>
+									Main content of the HTML
+									<br>
+									Can organize with divs 
+									<div> Text inside a div </div>
+									<br>
+									Can add attributes to tags
+									<div style="text-align: center;"> This div is now centered </div>
+								</body>
+							</html>   
+							</script></code></pre>
+						- list of HTML tags: https://www.w3schools.com/TAGS/default.ASP
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template style="text-align: left">
+						## Let's look at the HTML portion of the slider code
+						<pre><code class="language-html"><script type="text/template">
+							<!DOCTYPE html>
+							<html>
+							<body>
+								<input type="range" min="1" max="100" value="50"  id="slider">
+								<span id="outputlabel"> TEXT HERE </span> <br>
+							</body>
+							</html>
+							</script></code></pre>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template style="text-align: left">
+						## Let's add another slider
+						<pre><code class="language-html"><script type="text/template">
+							<!DOCTYPE html>
+							<html>
+							<body>
+								<input type="range" min="1" max="100" value="50"  id="slider_1">
+								<input type="range" min="1" max="100" value="50"  id="slider_2">
+								<span id="outputlabel"> TEXT HERE </span> <br>
+							</body>
+							</html>
+							</script></code></pre>
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template style="text-align: left">
+						## Let's add a button
+						<pre><code class="language-html"><script type="text/template">
+							<!DOCTYPE html>
+							<html>
+							<body>
+								<input type="range" min="1" max="100" value="50"  id="slider_1">
+								<input type="range" min="1" max="100" value="50"  id="slider_2">
+								<br>
+								<button>button</button>
+								<br>
+								<span id="outputlabel"> TEXT HERE </span> <br>
+							</body>
+							</html>
+							</script></code></pre>
+						`<br>` is a line break
+						Note, this page has no functionality. It's purely visual
+					</textarea>
+				</section>
+				<section data-markdown>
+					<textarea data-template style="text-align: left">
+						## CSS
+						HTML by itself is plain, you can set attributes for each tag individually, but that gets tedious very quickly.
+
+						CSS is a way to edit the default style of the basic HTML tags.
+
+
+					</textarea>
+				</section>
+				<section>
+					<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/black.css'); return false;">Black</a>
+					<br>
+					<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/white.css'); return false;">White</a>
+					<br>
+					<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/league.css'); return false;">Simple</a>
+					<br>
+					<a href="#" onclick="document.getElementById('theme').setAttribute('href','dist/theme/penn_metropolis.css'); return false;">Custom</a>
+				</section>
+				<section>Slide 2</section>
+				<section>Slide 2</section>
+				<section>Slide 2</section>
+			</div>
+		</div>
+
+		<script src="dist/reveal.js"></script>
+		<script src="plugin/notes/notes.js"></script>
+		<script src="plugin/markdown/markdown.js"></script>
+		<script src="plugin/highlight/highlight.js"></script>
+		<script>
+			// More info about initialization & config:
+			// - https://revealjs.com/initialization/
+			// - https://revealjs.com/config/
+			Reveal.initialize({
+				hash: true,
+				transition: 'none',
+				controls: false,
+				progress: false,
+
+				// Learn about plugins: https://revealjs.com/plugins/
+				plugins: [ RevealMarkdown, RevealHighlight, RevealNotes ]
+			});
+		</script>
+	</body>
+</html>
