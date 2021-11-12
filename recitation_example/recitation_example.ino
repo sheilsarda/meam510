@@ -48,6 +48,11 @@ void toggle_motors(){
   }
 }
 
+void drive_motors(){
+  Serial.println("driving motors");
+  h.sendplain("drove motors");
+}
+
 void setup_motors(){
   // set motor pins to be output
   // set motor direction pins
@@ -73,6 +78,8 @@ void setup() {
   h.attachHandler("/slider_1?val=",handle_slider);
   // h.attachHandler("/slider_r?val=",handle_slider);
   h.attachHandler("/toggle_motors",toggle_motors);
+  h.attachHandler("/forward",drive_motors);
+
 }
 
 void loop(){
