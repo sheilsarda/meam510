@@ -4,6 +4,8 @@ Greg Campbell, Sheil Sarda, Will Yang
 
 https://sheilsarda.github.io/meam510/
 
+Browse through the slides using left and right arrow keys.
+
 ## Created using reveal.js
 
 reveal.js is an open source HTML presentation framework. It enables anyone with a web browser to create fully featured and beautiful presentations for free. [Check out the live demo](https://revealjs.com/).
